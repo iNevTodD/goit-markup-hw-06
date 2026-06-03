@@ -1,0 +1,15 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.mobile-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #2E2F42;
+    border-radius: 50%;
+}
