@@ -126,6 +126,7 @@
             <li class="team-list-item">
               <img
                 src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -210,6 +211,7 @@
             <li class="team-list-item">
               <img
                 src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -252,6 +254,7 @@
             <li class="team-list-item">
               <img
                 src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -303,6 +306,7 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x"
                   alt="portfolio-1"
                   width="360"
                   height="300"
@@ -324,7 +328,8 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-2.jpg"
-                  alt="portfolio-1"
+                  srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x"
+                  alt="portfolio-2"
                   width="360"
                   height="300"
                 />
@@ -346,7 +351,8 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-3.jpg"
-                  alt="portfolio-1"
+                  srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x"
+                  alt="portfolio-3"
                   width="360"
                   height="300"
                 />
@@ -368,7 +374,8 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-4.jpg"
-                  alt="portfolio-1"
+                  srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x"
+                  alt="portfolio-4"
                   width="360"
                   height="300"
                 />
@@ -390,7 +397,8 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-5.jpg"
-                  alt="portfolio-1"
+                  srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x"
+                  alt="portfolio-5"
                   width="360"
                   height="300"
                 />
@@ -412,7 +420,8 @@
               <div class="portfolio-card-img">
                 <img
                   src="./images/portfolio-6.jpg"
-                  alt="portfolio-1"
+                  srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x"
+                  alt="portfolio-6"
                   width="360"
                   height="300"
                 />
@@ -493,36 +502,72 @@
       </div>
     </footer>
 
-    <div class="mobile-menu">
-      <button class="mobile-close-btn">
-        <svg class="close-btn-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <nav>
-        <ul class="mobile-page-nav">
-          <li>
-            <a class="page-nav-item current" href="#features">Features</a>
-          </li>
-          <li><a class="page-nav-item" href="#team">Team</a></li>
-          <li><a class="page-nav-item" href="#portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
+    <div id="mobile-menu" class="mobile-menu-overlay">
+      <div class="mobile-menu">
+        <button class="mobile-close-btn">
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-page-nav-list">
+            <li class="mobile-page-nav-item current">
+              <a href="#features">Features</a>
+            </li>
+            <li class="mobile-page-nav-item"><a href="#team">Team</a></li>
+            <li class="mobile-page-nav-item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address id="contacts" class="mobile-contacts">
-        <ul class="contacts-list">
-          <li>
-            <a class="contacts-list-item" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts-list-item" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <address id="contacts" class="mobile-contacts">
+          <ul class="mobile-contacts-list">
+            <li>
+              <a
+                class="mobile-contacts-list-item"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-contacts-list-item" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials-list">
+            <li class="mobile-socials-list-item">
+              <a href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-list-item">
+              <a href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-list-item">
+              <a href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-list-item">
+              <a href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </div>
 
     <div id="modal" class="modal-overlay">

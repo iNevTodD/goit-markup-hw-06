@@ -1,10 +1,6 @@
 .footer {
   background-color: #2e2f42;
-  /* padding-bottom: 100px;
-  padding-top: 100px; */
   padding: 96px 0;
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 .footer .container {
@@ -24,10 +20,10 @@
 }
 
 .logo-footer {
+  text-align: center;
   color: #f4f4fd;
   font-weight: 700;
   font-size: 18px;
-  margin: 0 auto;
   line-height: 1.33;
   letter-spacing: 0.03em;
   font-family: 'Raleway', sans-serif;
@@ -40,8 +36,8 @@
 
 .footer-text-content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-
   gap: 16px;
 }
 
@@ -49,16 +45,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 0 auto;
-  /* margin-left: 120px;
-  margin-right: 83px; */
-
 }
 
 .footer-socials-media p {
   font-weight: 500;
   color: #ffffff;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .footer .socials-list-item a:hover,
@@ -86,7 +78,7 @@
 .subscribe p {
   font-weight: 500;
   color: #ffffff;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .subscribe-form input {
@@ -140,4 +132,71 @@
 
 .send-icon {
   fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 96px 0px;
+    width: 100%;
+    max-width: 1158px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 108px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .footer-text-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 264px;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .footer-socials-media {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .subscribe {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1158px) {
+  .footer {
+    padding: 100px 0px;
+  }
+
+  .footer .container {
+    flex-wrap: nowrap;
+    padding: 0px 15px;
+    gap: 0;
+  }
+
+  .footer-text-content {}
+
+  .footer-socials-media {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 120px;
+    margin-right: 83px;
+  }
 }

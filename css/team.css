@@ -1,7 +1,6 @@
 .team {
   background-color: #f4f4fd;
   padding: 96px 0px;
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -31,7 +30,6 @@
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   max-width: 264px;
-  /* width: calc((100% - 72px) / 4); */
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -56,4 +54,46 @@
 .socials-list-item a:hover,
 .socials-list-item a:focus {
   background-color: #404BBF;
+}
+
+@media (min-width: 768px) {
+  .team {
+    padding: 96px 0;
+  }
+
+  .team .container {
+    gap: 72px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    padding: 0 16px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+
+  .team .container {
+    gap: 72px;
+    padding: 0 16px;
+  }
+
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
 }
