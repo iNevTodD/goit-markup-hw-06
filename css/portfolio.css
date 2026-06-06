@@ -11,7 +11,7 @@
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  gap: 48px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -77,17 +77,13 @@
 }
 
 @media (min-width: 768px) {
-  .portfolio {
-    padding: 120px 0px;
-  }
-
   .portfolio .container {
     gap: 72px;
     padding: 0 16px;
   }
 
   .portfolio-list {
-    gap: 48px 24px;
+    gap: 72px 24px;
     justify-content: flex-start;
     align-items: flex-start;
   }
