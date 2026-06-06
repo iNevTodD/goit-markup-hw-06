@@ -54,7 +54,8 @@
     margin-right: 0;
   }
 
-  .burger-icon {
+  .burger-icon,
+  .burger-btn {
     display: none;
   }
 
@@ -147,5 +148,7 @@
   }
   .contacts-list-item {
     line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
   }
 }

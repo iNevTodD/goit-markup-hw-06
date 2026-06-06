@@ -102,6 +102,11 @@
     gap: 72px;
     padding: 0 16px;
   }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
   .portfolio-card {
     flex-basis: calc((100% - 48px) / 3);
   }
