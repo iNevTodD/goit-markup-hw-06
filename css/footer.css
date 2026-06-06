@@ -139,7 +139,7 @@
   .footer {
     padding: 96px 0px;
     width: 100%;
-    max-width: 1158px;
+    max-width: 100%;
   }
 
   .footer .container {
@@ -201,6 +201,11 @@
     flex-wrap: nowrap;
     padding: 0px 15px;
     gap: 0;
+  }
+
+.footer-text-content,
+.footer-socials-media {
+    margin-bottom: 0;
   }
 
   .footer-text-content {

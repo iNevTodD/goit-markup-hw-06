@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 288px;
+  max-width: 100%;
 }
 
 .features-list-item h3 {
@@ -43,7 +43,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 16px;
     gap: 72px 24px;
   }
 
@@ -65,7 +64,6 @@
 
   .features .container {
     flex-direction: row;
-    padding: 0 16px;
     max-width: 1158px;
   }
 
